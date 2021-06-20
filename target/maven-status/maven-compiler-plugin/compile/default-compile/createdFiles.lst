@@ -1,0 +1,17 @@
+com\napas\ach\testjackson\model\Item.class
+com\napas\ach\testjackson\model\NapasDocument.class
+com\napas\ach\testjackson\model\NapasDocumentHeader.class
+com\napas\ach\testjackson\model\Shipto.class
+com\napas\ach\testjackson\model\CongTy.class
+com\napas\ach\testjackson\model\Shiporder.class
+com\napas\ach\testjackson\model\Shiptotype.class
+com\napas\ach\testjackson\model\Shipordertype.class
+com\napas\ach\testjackson\model\Ban.class
+com\napas\ach\testjackson\model\CongTy$DsPhong.class
+com\napas\ach\testjackson\Main.class
+com\napas\ach\testjackson\model\ObjectFactory.class
+com\napas\ach\testjackson\model\NapasDocumentPayload.class
+com\napas\ach\testjackson\model\Phong.class
+com\napas\ach\testjackson\model\NapasAgent.class
+com\napas\ach\testjackson\model\ChucNang.class
+com\napas\ach\testjackson\model\Itemtype.class

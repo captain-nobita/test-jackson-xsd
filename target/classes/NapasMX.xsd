@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:complexType name="NapasDocument">
+        <xs:sequence>
+            <xs:element name="Header" type="NapasDocumentHeader"/>
+            <xs:element name="Payload" type="NapasDocumentPayload"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="NapasDocumentHeader">
+        <xs:sequence>
+            <xs:element name="SenderReference" type="xs:string"/>
+            <xs:element name="MessageIdentifier" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="NapasDocumentPayload">
+        <xs:sequence>
+            <xs:element name="AppHdr" type="Phong"/>
+            <xs:any minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="NapasAgent">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:string"/>
+            <xs:element name="Name" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Phong">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="leader" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="NapasDocument" type="NapasDocument"/>
+
+</xs:schema>
